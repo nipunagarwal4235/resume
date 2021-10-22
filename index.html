@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive resume cv</title>
+    </head>
+    <body>
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Nirmal</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="bx bx-home nav__icon"></i>Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#profile" class="nav__link">
+                                <i class="bx bx-user nav__icon"></i>Profile
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#education" class="nav__link">
+                                <i class="bx bx-book nav__icon"></i>Education
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="bx bx-receipt nav__icon"></i>Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#experience" class="nav__link">
+                                <i class="bx bx-briefcase-alt nav__icon"></i>Experience
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#certificates" class="nav__link">
+                                <i class="bx bx-award nav__icon"></i>Certificates
+                            </a>
+                        </li> 
+                        <li class="nav__item">
+                            <a href="#references" class="nav__link">
+                                <i class="bx bx-link-external nav__icon"></i>References
+                            </a>
+                        </li> 
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggler">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </nav>
+            
+        </header>
+
+        <main class="l-main bd-container">
+            <!-- All elements within this div, is generated in PDF -->
+            <div class="resume" id="area-cv">
+                <div class="resume__left">
+                    <!--========== HOME ==========-->
+                    <section class="home" id="home">
+                        <div class="home__container section bd-grid">
+                            <div class="home__data bd-grid">
+                                <img src="assets/img/profile.png" alt="" class="home__img">
+                                <h1 class="home__title">Nirmal <b>Dalmia</b></h1>
+                                <h3 class="home__profession">Front-end Developer</h3>
+                                <!-- Button to generate and download the pdf. Available for desktop. -->
+                        <div>
+                        <a download="" href="assets/pdf/ResumeCv.pdf" class="home__button-movil">Download</a>
+                        </div>
+                            </div>
+                            <div class="home__address bd-grid">
+                                <span class="home__information">
+                                    <i class="bx bx-map home__icon"></i>Hyderabad, India
+                                </span>
+                                <span class="home__information">
+                                    <i class="bx bx-envelope home__icon"></i>nirmaldalmia17@gmail.com
+                                </span>
+                                <span class="home__information">
+                                    <i class="bx bx-phone home__icon"></i>+91-8790021019
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Theme change button -->
+                        <i class="bx bx-moon change-theme" id="theme-button" title="Theme"></i>
+                        <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
+    
+                        
+
+                    </section>          
+                    
+                    <!--========== SOCIAL ==========-->
+                    <section class="social section">
+                        <h2 class="section-title">SOCIAL</h2>
+                        <div class="social__container bd-grid">
+                            <a href="https://www.linkedin.com/in/nirmaldalmia/" target="_blank" class="social__link">
+                                <i class='bx bxl-linkedin-square social__icon'></i>@nirmaldalmia
+                            </a>
+                            <a href="https://github.com/nirmaldalmia" class="social__link">
+                                <i class='bx bxl-github social__icon' ></i>@nirmaldalmia
+                            </a>
+                        </div>
+                    </section>
+
+                    <!--========== PROFILE ==========-->
+                    <section class="profile section" id="profile">
+                        <h2 class="section-title">Profile</h2>
+                        <p class="profile__description">My former boss once sat me down and told "You're a brave engineer". He told me my courage to try out new things without the fear of failing and my thirst for knowledge lead him to say that. <br>
+Hi! I'm Nirmal and I am a brave engineer.</p>
+                    </section>
+                    
+                    <!--========== EDUCATION ==========-->
+                    <section class="education section" id="education">
+                        <h2 class="section-title">Education</h2>
+
+                        <div class="education__container bd-grid">
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <span class="education__line"></span>
+                                </div>
+
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">B.Tech in Computer Science & Engineering</h3>
+                                    <span class="education__studies">BML Munjal University</span>
+                                    <span class="education__year">2016 - 2020</span>
+                                </div>
+                            </div>
+                             <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <!-- <span class="education__line"></span> -->
+                                </div>
+
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">Senior Secondary</h3>
+                                    <span class="education__studies">Narayana Junior College</span>
+                                    <span class="education__year">2014 - 2016</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!--========== SKILLS  ==========-->
+                    <section class="skills section" id="skills">
+                        <h2 class="section-title">Skills</h2>
+
+                        <div class="skills__content bd-grid">
+                            <!-- <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     Technologies:
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     HTML
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     CSS
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     Javascript
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     Node
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     JSX
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     Sass
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     TypeScript
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     Python
+                                    </span>
+                                </li>
+
+                            </ul>
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     Libraries:
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     React
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     Redux
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     Express
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     Node
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     Bootstrap
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     Vue
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     Vuex
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     React Native
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     MobX
+                                    </span>
+                                </li>
+
+                            </ul>
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     Database: 
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     MySQL
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     PostgreSQL
+                                    </span>
+                                </li>
+                            </ul>
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     Tools:
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                    VS Code
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     Git
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     Photoshop
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     NPM
+                                    </span>
+                                </li>
+                            </ul>
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     Other:
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     Web development
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     App development
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     IoT
+                                    </span>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     Information Retrieval
+                                    </span>
+                                </li>
+                            </ul> -->
+
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     Technologies: <br> HTML | CSS | Javascript | Node | JSX | Sass | TypeScript | Python
+                                    </span>
+                                </li>
+                            </ul>
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     Libraries:<br>React | Redux | Express | Node | Bootstrap | Vue | Vuex | React Native | MobX
+                                    </span>
+                                </li>
+                            </ul>
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle">
+                                     Database:<br> MySQL | PostgreSQL
+                                    </span>
+                                </li>
+                            </ul>
+                            <ul class="skills__data">
+                                  <li class="skills__name">
+                                    <span class="skills__circle">
+                                     Tools:<br> VS Code| Git | Photoshop | NPM
+                                    </span>
+                                </li>
+                            </ul>
+                            <ul class="skills__data">
+                                  <li class="skills__name">
+                                    <span class="skills__circle">
+                                    Other:<br> Web development | App development | IoT | Information Retrieval
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                </div>
+
+                <div class="resume__right">
+                    <!--========== EXPERIENCE ==========-->
+                    <section class="experience section" id="experience">
+                        <h2 class="section-title"> Work Experience</h2>
+
+                        <div class="experience__container bd-grid">
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+                                <div class="experience__data bg-grid">
+                                    <h3 class="experience__title">Software Engineer</h3>
+                                    <span class="experience__company">From Aug, 2020 - Present | X0PA AI </span>
+                                    <p class="experience__description">Responsible for the implementation of new features and enhancing the existing features on the X0PA
+assessment platform called Room. Responsible for developing and maintaining the Room mobile app built
+with React Native</p>
+                                </div>
+                            </div>
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+                                <div class="experience__data bg-grid">
+                                    <h3 class="experience__title">Software Development Engineer</h3>
+                                    <span class="experience__company">From June, 2020 - July, 2020 | Param.ai </span>
+                                    <p class="experience__description">Responsible for planning and building new features, enhancing the existing one's on the Param platform
+using VueJS. Also, responsible for developing and maintaining the Param Mobile app built with React Native</p>
+                                </div>
+                            </div>
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+                                <div class="experience__data bg-grid">
+                                    <h3 class="experience__title">Frontend Engineering Intern</h3>
+                                    <span class="experience__company">From Jan, 2020 - May, 2020 | Param.ai </span>
+                                    <p class="experience__description">Responsible for building new features and enhancing the existing one's on the Param platform using VueJS. Also, responsible for maintaining the Param Mobile app built with React Native.</p>
+                                </div>
+                            </div>
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <!-- <span class="experience__line"></span> -->
+                                </div>
+                                <div class="experience__data bg-grid">
+                                    <h3 class="experience__title">Development Intern</h3>
+                                    <span class="experience__company">From May, 2018 - Nov, 2019 | Spotflock LLC </span>
+                                    <p class="experience__description">Responsible for developing scalable, user-friendly and responsive web and app interfaces using ReactJS and
+React Native.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                       <section class="experience section" id="experience">
+                        <h2 class="section-title">Project Experience</h2>
+
+                        <div class="experience__container bd-grid">
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+                                <div class="experience__data bg-grid">
+                                    <h3 class="experience__title">COVID Zone Tracker</h3>
+                                    <span class="experience__company">July 2020 | PWA React App - Personal Project </span>
+                                    <p class="experience__description">COVID Zone Tracker is a Progressive Web App built with ReactJS which helps the users to identify what zone a
+particular city/district is in.</p>
+                                </div>
+                            </div>
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+                                <div class="experience__data bg-grid">
+                                    <h3 class="experience__title">CountsLive Mobile App</h3>
+                                    <span class="experience__company">From May 2020 - Present | React Native Application-Personal Project </span>
+                                    <p class="experience__description">CountsLive is the simplest real-time social stats tracker for multiple platforms like YouTube, TikTok,
+Instagram, Twitter, Twitch, Mixer, Vlive, Dailymotion & Reddit all in one app right at your fingertips!</p>
+                                </div>
+                            </div>
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+                                <div class="experience__data bg-grid">
+                                    <h3 class="experience__title">Match Maker</h3>
+                                    <span class="experience__company"> 2018 | Information Retrieval - Course Project </span>
+                                    <p class="experience__description">Match Maker is a matchmaking tool based on the personality analysis of the users. It uses IBM Watson's
+Personality Insights API to get the personality and matches using cosine similarity.</p>
+                                </div>
+                            </div>
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <!-- <span class="experience__line"></span> -->
+                                </div>
+                                <div class="experience__data bg-grid">
+                                    <h3 class="experience__title">Open Vending</h3>
+                                    <span class="experience__company">2018 | Digital Vending Platform - Hackathon Project </span>
+                                    <p class="experience__description">Similar to the concept of Amazon Go, Open Vending makes vending machines simpler and easier to use. It is
+based on Bluetooth Low Energy (BLE) and fingerprinting technology</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--========== CERTIFICATES ==========-->
+                    <section class="certificate section" id="certificates">
+                        <h2 class="section-title">Certificates</h2>
+
+                        <div class="certificate__container bd-grid">
+                            <div class="certificate__content">
+                            <h3 class="certificate__title">Certificate Title</h3>
+                            <p class="certificate__description">Certificate Description</p>
+                            </div>
+                            <div class="certificate__content">
+                            <h3 class="certificate__title">Certificate Title</h3>
+                            <p class="certificate__description">Certificate Description</p>
+                            </div>
+                            <div class="certificate__content">
+                            <h3 class="certificate__title">Certificate Title</h3>
+                            <p class="certificate__description">Certificate Description</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--========== REFERENCES ==========-->
+                    <section class="references section" id="references">
+                        <h2 class="section-title">References</h2>
+
+                        <div class="references__container bd-grid">
+                            <div class="references__content bd-grid">
+                                <span class="references__subtitle">References Subtitle</span>
+                                <h3 class="references__title">references title</h3>
+                                <ul class="references__contact">
+                                    <li>phone number</li>
+                                    <li>emailid</li>
+                                </ul>
+                            </div>
+                            <div class="references__content bd-grid">
+                                <span class="references__subtitle">References Subtitle</span>
+                                <h3 class="references__title">references title</h3>
+                                <ul class="references__contact">
+                                    <li>phone number</li>
+                                    <li>emailid</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--========== LANGUAGES ==========-->
+                    <section class="languages section">
+                        <h2 class="section-title">Languages</h2>
+
+                        <div class="languages__container">
+                            <ul class="languages__content bd-grid">
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span>English
+                                </li>
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span>Hindi
+                                </li>
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span>Telugu
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    
+                    <!--========== INTERESTS ==========-->
+                    <section class="interests section">
+                        <h2 class="section-title">Interests</h2>
+
+                        <div class="interests__container bd-grid">
+                            <div class="interests__content">
+                                <i class="bx bx-headphone interests__icon"></i>
+                                <span class="interets__name">Music</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- ============Additional Projects============= -->
+                    <section class="add-projects section">
+                        <h2 class="section-title">Additional Projects</h2>
+
+                        <div class="interests__container bd-grid">
+                            <div class="interests__content">
+                                <ul>
+                                    <li>
+                                        <span class="languages__circle"></span>
+                                        <span class="interets__name">Sound Based Object Material Detection for Garbage Classification (2019)</span>
+                                    </li>
+                                    <li>
+                                        <span class="languages__circle"></span>
+                                        <span class="interets__name">SmartPot - Intelligent Plant Monitoring and Feedback System (2019)</span>
+                                    </li>
+                                    <li>
+                                        <span class="languages__circle"></span>
+                                        <span class="interets__name">Watch Tonight - Movie Recommendation System (2019)</span>
+                                    </li>
+                                    <li>
+                                        <span class="languages__circle"></span>
+                                        <span class="interets__name">Ciphertext generation based on Linear Algebra (2017)</span>
+                                    </li>
+                                    <li>
+                                        <span class="languages__circle"></span>
+                                        <span class="interets__name">Blood Bank Management System (2018)</span>
+                                    </li>
+                                    <li>
+                                        <span class="languages__circle"></span>
+                                        <span class="interets__name">Dining Philosophers Problem Simulation (2018)</span>
+                                    </li>
+                                    <li>
+                                        <span class="languages__circle"></span>
+                                        <span class="interets__name">Gradient Background Preview (2018)</span>
+                                    </li>
+                                    <li>
+                                        <span class="languages__circle"></span>
+                                        <span class="interets__name">Line Follower Robot (2016)</span>
+                                    </li>
+                                    <li>
+                                        <span class="languages__circle"></span>
+                                        <span class="interets__name">Food Donation Platform (2016)</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Extra Curricular -->
+                      <section class="extra-activities section">
+                        <h2 class="section-title">Extra Curricular</h2>
+
+                        <div class="interests__container bd-grid">
+                            <div class="interests__content">
+                                <ul>
+                                    <li>
+                                        <span class="languages__circle"></span>
+                                        <span class="interets__name">15,000+ points on InterviewBit</span>
+                                    </li>
+                                    <li>
+                                        <span class="languages__circle"></span>
+                                        <span class="interets__name">President of ACM Student Chapter (Association for Computing Machinery)</span>
+                                    </li>
+                                    <li>
+                                        <span class="languages__circle"></span>
+                                        <span class="interets__name">Secretary of ACM Student Chapter (Association for Computing Machinery)</span>
+                                    </li>
+                                    <li>
+                                        <span class="languages__circle"></span>
+                                        <span class="interets__name">Organizer, HackBMU 2019</span>
+                                    </li>
+                                    <li>
+                                        <span class="languages__circle"></span>
+                                        <span class="interets__name">Organizer, HackBMU 2018</span>
+                                    </li>
+                                    <li>
+                                        <span class="languages__circle"></span>
+                                        <span class="interets__name">Technical Expert, TEDxBMU</span>
+                                    </li>
+                                    <li>
+                                        <span class="languages__circle"></span>
+                                        <span class="interets__name">Technical Team, 67th Milestone 2017</span>
+                                    </li>
+                                    <li>
+                                        <span class="languages__circle"></span>
+                                        <span class="interets__name">Event Coordinator for HackInfinity 2017</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>        
+        </main>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+        </a>
+
+        <!--========== HTML2PDF ==========-->
+        <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
